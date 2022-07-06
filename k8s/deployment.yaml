@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rsehkg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rsehkg
+  template:
+    metadata:
+      labels:
+        app: rsehkg
+    spec:
+      containers:
+      - image: okteto.dev/rsehkg:latest
+        name: rsehkg
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "mirror.umd.edu"
+        - name: Vless_UUID
+          value: "5bc32d78-8233-4bba-b791-22db031ee156"
+        - name: Vless_Path
+          value: "/adhkj"
+        - name: Vmess_UUID
+          value: "5bc32d78-8233-4bba-b791-22db031ee156"
+        - name: Vmess_Path
+          value: "/dgenm"
+        - name: Share_Path
+          value: "/prjfh"
