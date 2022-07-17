@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rsehkg
+  name: gskhdh
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "rsehkg"
+  - name: "gskhdh"
     port: 8080
   selector:
-    app: rsehkg
+    app: gskhdh
