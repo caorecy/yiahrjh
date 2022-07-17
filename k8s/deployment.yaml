@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gskhdh
+  name: pdhtm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gskhdh
+      app: pdhtm
   template:
     metadata:
       labels:
-        app: gskhdh
+        app: pdhtm
     spec:
       containers:
-      - image: okteto.dev/gskhdh:latest
-        name: gskhdh
+      - image: okteto.dev/pdhtm:latest
+        name: pdhtm
         ports:
         - containerPort: 8080
         env:
