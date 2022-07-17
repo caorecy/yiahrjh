@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pdhtm
+  name: ydghj
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pdhtm
+      app: ydghj
   template:
     metadata:
       labels:
-        app: pdhtm
+        app: ydghj
     spec:
       containers:
-      - image: okteto.dev/pdhtm:latest
-        name: pdhtm
+      - image: okteto.dev/ydghj:latest
+        name: ydghj
         ports:
         - containerPort: 8080
         env:
