@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rsehkg
+  name: gskhdh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rsehkg
+      app: gskhdh
   template:
     metadata:
       labels:
-        app: rsehkg
+        app: gskhdh
     spec:
       containers:
-      - image: okteto.dev/rsehkg:latest
-        name: rsehkg
+      - image: okteto.dev/gskhdh:latest
+        name: gskhdh
         ports:
         - containerPort: 8080
         env:
